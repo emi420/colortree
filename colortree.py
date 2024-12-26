@@ -31,7 +31,6 @@ def print_tree(size):
     for i in range(0, 1):
         line = []
         for j in range(0, size*2):
-            v = j - n
             line.append(random.choice(trunk_chars) if (j > trunk_v and (j < trunk_v + trunk_v)) else " ")
         print("\033[40m{}\033[00m" .format(" ".join(line)))
 
